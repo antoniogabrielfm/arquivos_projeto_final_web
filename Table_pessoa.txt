@@ -1,0 +1,17 @@
+--
+-- Estrutura da tabela `pessoa`
+--
+
+CREATE TABLE IF NOT EXISTS `pessoa` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(300) COLLATE utf8_bin DEFAULT NULL,
+  `email` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `telefone` varchar(300) COLLATE utf8_bin DEFAULT NULL,
+  `celular` varchar(300) COLLATE utf8_bin DEFAULT NULL,
+  `idcat` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idcat` (`idcat`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1;
+
+
+
